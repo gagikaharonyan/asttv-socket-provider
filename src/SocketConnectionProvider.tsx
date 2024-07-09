@@ -50,8 +50,12 @@ export function SocketConnectionProvider({
     (token?: string) => {
       let ws: WebSocket;
 
+      console.log("initing from lib");
+
       const connectWs = () => {
         ws = new WebSocket(SOCKET_URL);
+
+        console.log("url", SOCKET_URL);
 
         const user_random_id = Math.floor(Math.random() * 1000000);
 

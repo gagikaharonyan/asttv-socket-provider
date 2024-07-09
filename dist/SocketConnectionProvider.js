@@ -21,8 +21,10 @@ function SocketConnectionProvider({ children, }) {
     }, []);
     const initConnection = useCallback((token) => {
         let ws;
+        console.log("initing from lib");
         const connectWs = () => {
             ws = new WebSocket(SOCKET_URL);
+            console.log("url", SOCKET_URL);
             const user_random_id = Math.floor(Math.random() * 1000000);
             ws.onopen = () => {
                 ws.send(JSON.stringify({
