@@ -2,7 +2,7 @@
   "name": "fasttv-socket-provider",
   "version": "1.0.0",
   "module": "dist/index.esm.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types",
   "files": [
     "dist",
     "types"
